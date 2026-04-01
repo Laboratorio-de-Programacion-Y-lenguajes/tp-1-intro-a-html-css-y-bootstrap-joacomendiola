@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RI8vnIt_)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23386275)
 # Mi Blog Personal - TP Semana 1
 
 Página web de blog personal usando **HTML5**, **CSS3** y **Bootstrap 5**.
@@ -131,6 +129,6 @@ Tu `assets/styles.css` se importa DESPUÉS de Bootstrap, así que tus estilos lo
 
 ---
 
-**Autor**: [Tu nombre]  
+**Autor**: Joaquin Mendiola  
 **Fecha**: 2026-03-13  
-**Estado**: En desarrollo
+**Estado**: Terminado
