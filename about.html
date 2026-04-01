@@ -8,29 +8,54 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Navbar (copiar de index.html) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
     <!-- Contenido -->
     <main class="py-5">
         <div class="container">
-            <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
+            <div class="row align-items-start">
+                <aside class="col-12 col-md-3 mb-4 text-center d-flex flex-column align-items-center">
+                    <img src="assets/levelup.jpg" class="img-fluid rounded-circle mb-3 my-avatar" alt="Avatar">
+                    <h3>Joaquin Mendiola</h3>
+                    <p class="text-muted">Estudiante de Programacion <br> UNTDF</p>
                 </aside>
 
-                <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
-                    <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
+                <article class="col-12 col-md-9 text-start">
+                    <h1 class="mb-4 text-center text-md-start "> Acerca de mí</h1>
+                    <p>¡Hola! Soy Joaquin Mendiola, un apasionado estudiante de programación en la Universidad Nacional de Tierra del Fuego. Desde que descubrí el mundo de la tecnología, me he dedicado a aprender y mejorar mis habilidades en desarrollo de software.</p>
+                    <p> Actualmente curso en la <strong>Universidad Nacional de Tierra del Fuego</strong></p>
+                    
+                    <h2 class="mt-4 h5 fw-bold">Habilidades</h2>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-primary">HTML</span>
+                        <span class="badge bg-primary">CSS</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                        <span class="badge bg-primary">Bootstrap</span>
+                    </div>
+                
+                    <h3 class="mt-4 h5 fw-bold">Intereses</h3>
+                    <p> Más allá del código, disfruto del trekking por los pasajes de la isla</p>
                 </article>
             </div>
         </div>
@@ -39,7 +64,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
         </div>
     </footer>
 
