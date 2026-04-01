@@ -4,60 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog Personal</title>
-    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-
-    <!-- Hero section -->
     <header class="bg-gradient text-white py-5">
         <div class="container text-center">
             <h1 class="display-4">Bienvenido a Mi Blog</h1>
             <p class="lead">Historias, tecnología y reflexiones</p>
         </div>
     </header>
-
-    <!-- Main: listado de artículos -->
     <main class="py-5">
         <div class="container">
-            <h2 class="mb-4">Artículos Recientes</h2>
-
-            <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
+            <h2 class="mb-4 text-center">Artículos Recientes</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
+                <div class="col-12 col-md-4 mb-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="assets/portada-programador-pragmatico.jpg" class="card-img-top" alt="Programación avanzada">
                         <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <h3 class="card-title h5">Programador Pragmatico</h3>
+                            <p class="card-text text-muted small">Autor: Joaquin Mendiola</p>
+                            <p class="card-text">Descubrí cómo me convertí en el mejor programador aplicando técnicas de arquitectura moderna.</p>
                             <a href="#" class="btn btn-primary btn-sm">Leer más</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- TODO: agregar 2 más -->
+                <div class="col-12 col-md-4 mb-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="assets/portada-codigolimpio.jpg" class="card-img-top" alt="Diseño de software">
+                        <div class="card-body">
+                            <h4 class="card-title h5">Codigo Limpio</h4>
+                            <p class="card-text text-muted small">Autor: Joaquin Mendiola</p>
+                            <p class="card-text">La clave para un código mantenible es la estructura. Aquí te cuento mis secretos de desarrollo.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="assets/portada-silocrees.jpg" class="card-img-top" alt="Habilidades blandas">
+                        <div class="card-body">
+                            <h5 class="card-title">Si lo crees lo creas</h5>
+                            <p class="card-text text-muted small">Autor: Joaquin Mendiola</p>
+                            <p class="card-text">No todo es código. Aprender a comunicar tus ideas es tan importante como escribirlas.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
+            <div class="mt-2">
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">GitHub</a>
+                <a href="#" class="text-white mx-2">LinkedIn</a>
+            </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
